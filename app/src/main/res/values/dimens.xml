@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="text_name_size">22sp</dimen>
+  <dimen name="text_error_size">16sp</dimen>
+  <dimen name="default_4dp">4dp</dimen>
+  <dimen name="default_8dp">8dp</dimen>
+
+  <dimen name="padding">16dp</dimen>
+  <dimen name="layout_margin">16dp</dimen>
+  <dimen name="image_share">18dp</dimen>
+  <dimen name="padding_bottom_4">4dp</dimen>
+  <dimen name="layout_margin_4">4dp</dimen>
+  <dimen name="layout_margin_8">8dp</dimen>
+  <dimen name="layout_margin_5">5dp</dimen>
+  <dimen name="card_corner_radius">2dp</dimen>
+  <dimen name="thumbnail_image_width">140dp</dimen>
+  <dimen name="thumbnail_image_height">120dp</dimen>
+</resources>
