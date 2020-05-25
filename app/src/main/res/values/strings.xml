@@ -2,4 +2,5 @@
   <string name="app_name">NewsAPISample App</string>
   <string name="articles_text">Articles</string>
   <string name="error_message">There is an error getting the data: \n</string>
+  <string name="share_article">Share Article</string>
 </resources>

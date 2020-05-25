@@ -1,5 +1,6 @@
 package com.newsapi.sampleapp.ui.adapter
 
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -51,6 +52,7 @@ class ArticlesAdapter(
     var image = itemView.findViewById<ImageView>(R.id.thumbnail_image_card)
     var author = itemView.findViewById<TextView>(R.id.author_card)
     var date = itemView.findViewById<TextView>(R.id.date_card)
+    var share = itemView.findViewById<ImageView>(R.id.share_image_card)
 
     fun articlesListItem(item: Article) {
       title.text = item.title
@@ -62,6 +64,15 @@ class ArticlesAdapter(
               .placeholder(R.drawable.loading)
               .centerCrop()
               .into(image)
+
+      share.setOnClickListener{
+        val sharingIntent = Intent(Intent.ACTION_SEND)
+        sharingIntent.type = "text/plain"
+        sharingIntent.putExtra(Intent.EXTRA_TEXT,
+                item.title.toString() + " : " + item.url)
+        itemView.context.startActivity(Intent.createChooser(sharingIntent,
+                itemView.context.getString(R.string.share_article)))
+      }
 
     }
   }
